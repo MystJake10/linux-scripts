@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update package lists
-sudo apt update
+sudo apt update && sudo apt upgrade -y
 
 # Install Brave browser
 echo "APT: Installing Brave browser..."
@@ -36,3 +36,13 @@ sudo apt install -y htop
 
 # Print completion message
 echo "Installation completed."
+
+# Enable dark mode (assuming GNOME)
+echo "Configuring Settings..."
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+# Install Oh-my-zsh
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+# Uninstall other web browsers
+sudo apt remove firefox chromium-browser --purge
