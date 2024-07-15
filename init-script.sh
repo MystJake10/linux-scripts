@@ -46,7 +46,7 @@ sudo snap install --classic code
 
 # Install Jellyfin
 echo "Installing Flatpak packages..."
-flatpak install flathub com.github.iwalton3.jellyfin-media-player
+flatpak install -y flathub com.github.iwalton3.jellyfin-media-player
 
 # Install OhMyZsh
 echo "Installing OhMyZsh..."
