@@ -1,0 +1,9 @@
+[clipboard]
+add-images=true
+instant-paste=true
+keep-clipboard-content=true
+recent-items-size=uint32 50
+synchronize-clipboards=false
+
+[plugins]
+active-plugins=['indicator']
